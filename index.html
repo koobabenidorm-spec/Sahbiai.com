@@ -4,80 +4,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SAHBI AI - Ya Hmar, Arwah Teqra!</title>
+<title>SAHBI AI - L'IA du Maghreb qui parle au Monde</title>
 <style>
-body{background:#000;color:#fff;font-family:Arial,sans-serif;margin:0;padding:20px;text-align:center}
-.badge{background:#00FF88;color:#000;padding:5px 15px;border-radius:20px;font-weight:bold}
-h1{font-size:28px;margin-top:10px} h1 span{color:#00FF88}
-.circle{width:130px;height:130px;background:#111;border:3px solid #00FF88;border-radius:50%;margin:20px auto;display:flex;align-items:center;justify-content:center;font-size:60px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:400px;margin:auto}
-.card{background:#0F0F0F;border:1px solid #222;padding:15px;border-radius:15px;font-size:14px}
-.bar{background:#111;border-radius:30px;display:flex;align-items:center;padding:10px;max-width:500px;margin:20px auto;border:1px solid #333}
-.bar input{flex:1;background:transparent;border:none;color:#fff;outline:none;padding:5px 15px;font-size:16px}
-.mic{width:45px;height:45px;background:#00FF88;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000;font-size:20px}
-#chat{max-width:500px;margin:auto;text-align:left}
-.msg{background:#111;padding:12px;border-radius:15px;margin:10px 0;border-left:3px solid #00FF88}
-.user{border-left-color:#fff;text-align:right}
+body{background:#000;color:#fff;font-family:Arial,sans-serif;margin:0;padding:15px;text-align:center}
+.badge{background:#00FF88;color:#000;padding:6px 18px;border-radius:20px;font-weight:bold;font-size:13px}
+h1{font-size:30px;margin:10px 0} h1 span{color:#00FF88}
+.flags{font-size:20px;letter-spacing:5px;margin:8px}
+.sub{color:#888;font-size:12px;line-height:1.6}
+.circle{width:125px;height:125px;background:#0F0F0F;border:3px solid #00FF88;border-radius:50%;margin:15px auto;display:flex;align-items:center;justify-content:center;font-size:55px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:560px;margin:15px auto}
+.card{background:#111;border:1px solid #222;padding:11px;border-radius:14px;font-size:12px;cursor:pointer}
+.card b{color:#00FF88}
+.bar{background:#111;border-radius:30px;display:flex;align-items:center;padding:8px 12px;max-width:600px;margin:20px auto;border:1px solid #333;position:sticky;bottom:15px}
+.bar input{flex:1;background:transparent;border:none;color:#fff;outline:none;padding:5px 12px;font-size:15px}
+.mic{width:46px;height:46px;background:#00FF88;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000;font-size:20px}
+#chat{max-width:600px;margin:auto;text-align:left;min-height:60px}
+.msg{background:#111;padding:12px 14px;border-radius:16px;margin:10px 0;border-left:3px solid #00FF88;font-size:14px;line-height:1.4}
+.user{border-left-color:#fff;text-align:right;background:#0A0A0A}
 </style>
 </head>
 <body>
-<div class="badge">● LIVE SAHBI AI</div>
-<h1>SAHBI AI <span>Parle!</span></h1>
-<p style="color:#888">Derja • Kabyle • Chaoui • Français • Arwah tehder!</p>
-<div class="circle">🧔🏽</div>
+<div class="badge">● SAHBI WORLD LIVE - MAGHREB × ARAB WORLD × WORLD</div>
+<h1>SAHBI AI <span>World</span></h1>
+<div class="flags">🇩🇿 🇲🇦 🇹🇳 🇱🇾 ♓ 🇸🇦 🇪🇬 🇸🇾 🇬🇧 🇪🇸 🇩🇪 🇨🇳</div>
+<p class="sub">Maghreb: Derja DZ • Derja MA • Tunsi • Libi • Kabyle • Chaoui • Rif • Tachelhit<br>Monde Arabe: Khaliji • Chami • Masri • Iraq • Monde: English • Español • Deutsch • Italiano • Türkçe • 中文</p>
+<div class="circle">🌍</div>
 <div class="grid">
-<div class="card" onclick="ask('Wesh sahbi kifak?')">🗣️ Wesh kifak?</div>
-<div class="card" onclick="ask('Achki ya Sahbi?')">🇩🇿 Achki?</div>
-<div class="card" onclick="ask('Azul a sahbi')">♓ Azul!</div>
-<div class="card" onclick="ask('Donne moi une blague algérienne')">😂 Blague DZ</div>
+<div class="card" onclick="ask('Wesh sahbi labass?')"><b>🇩🇿 DZ</b><br>Wesh labass?</div>
+<div class="card" onclick="ask('Kif dayr a sahbi bikhir?')"><b>🇲🇦 MA</b><br>Kif dayr?</div>
+<div class="card" onclick="ask('Chnowa ahwelek sahbi?')"><b>🇹🇳 TN</b><br>Chnowa?</div>
+<div class="card" onclick="ask('Azul a gma')"><b>♓ Kabyle</b><br>Azul!</div>
+<div class="card" onclick="ask('Hello my friend')"><b>🇬🇧 EN</b><br>Hello sahbi!</div>
+<div class="card" onclick="ask('Hola sahbi como estas')"><b>🇪🇸 ES</b><br>Hola!</div>
+<div class="card" onclick="ask('Kifak ya zalameh?')"><b>🇸🇦 CHAMI</b><br>Kifak?</div>
+<div class="card" onclick="ask('Ya akhi keif halak?')"><b>🇸🇦 KHALIJI</b><br>Ya akhi?</div>
 </div>
 <div id="chat"></div>
 <div class="bar">
-<input id="input" placeholder="Ekteb hna ya hmar... ou clique 🎤" onkeydown="if(event.key==='Enter')send()">
-<div class="mic" onclick="startVoice()">🎤</div>
-</div>
-<script>
-const chat=document.getElementById('chat');
-const input=document.getElementById('input');
-function addMsg(t,c){let d=document.createElement('div');d.className='msg '+c;d.innerText=t;chat.appendChild(d);window.scrollTo(0,document.body.scrollHeight);}
-function ask(t){input.value=t;send();}
-function sahbiReply(q){
- q=q.toLowerCase();
- if(q.includes('wesh')||q.includes('kifak')||q.includes('labass')) return "Wesh kho! Labass 3lik? Ana SAHBI, rani hna! 😎 Bikhir w nta?";
- if(q.includes('azul')||q.includes('kabyle')) return "Azul a gma! Labas fellak? Nekk SAHBI, s Tamazight, s Derja, koulchi nehder! ♓";
- if(q.includes('achki')||q.includes('blague')||q.includes('nekta')) return "Hahaha ya hmar! Gallek wahed tlaga m3a Martiou, gatlo win kont? Gallha kont naqra! Gatlo mali rak teqra sahbiai.com? 😂😂";
- if(q.includes('chaoui')) return "Ay Achaoui! Ahrur! Kech la3b? Ana nahder Chaoui tani, sahbi!";
- if(q.includes('sahra')) return "Ya sahbi ta3 Sahara, Rabi yahfedkom! Tmanrasset, Djanet, ga3 sahra fi galbi!";
- if(q.includes('qui es tu')) return "Ana SAHBI AI, l'intelligence artificielle ta3 DZ! Ndareb Derja, Kabyle, Français, Arab! Chaykha Sahbiai.com!";
- return "Aaaa sahbi "+q+"? Ya hmar arwah teqra fi Sahbiai.com! Rani nfhemek bien, 3awedli b Derja mlih! 😂";
-}
-function speak(t){
- if('speechSynthesis' in window){
-  let u=new SpeechSynthesisUtterance(t);
-  u.lang='fr-FR'; u.rate=1.1;
-  speechSynthesis.speak(u);
- }
-}
-function send(){
- let q=input.value.trim(); if(!q) return;
- addMsg(q,'user'); input.value='';
- setTimeout(()=>{
-  let r=sahbiReply(q); addMsg(r,'bot'); speak(r);
- },600);
-}
-function startVoice(){
- if(!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)){
-  alert("Micro non supporté sur ce navigateur, utilise Chrome sahbi!");
-  return;
- }
- let Rec=window.SpeechRecognition||window.webkitSpeechRecognition;
- let rec=new Rec(); rec.lang='fr-FR'; rec.start();
- addMsg("🎤 Rani nesme3 fik... ehder!",'bot');
- rec.onresult=(e)=>{
-  let txt=e.results[0][0].transcript;
-  input.value=txt; send();
- }
-}
-</script>
-</body>
-</html>
+<input id="input" placeholder="Ekteb hna... Write here... اكتب هنا... 🎤" onkeydown="if(event.key==='Enter')send()">
+<div
